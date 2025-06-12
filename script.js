@@ -17,9 +17,7 @@ for(let select of dropdowns){
         else if(select.name==="to"&&currcode==="INR"){
             newoption.selected="selected";
         }
-        else{
-            select.append(newoption)
-        }
+        select.append(newoption)
     }
 
     select.addEventListener("change", (evt) => {
@@ -40,8 +38,8 @@ const updaterate = async () =>{
     let data= await responce.json();
     let rate = data[toCurr.value.toLowerCase()];
 
-      let finalAmount = amtVal * rate;
-  msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+    let finalAmount = amtVal * rate;
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 
 
