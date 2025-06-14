@@ -1,4 +1,4 @@
-const base_url= "https://github.com/fawazahmed0/exchange-api";
+const base_url= "https://api.currencyfreaks.com/v2.0/supported-currencies";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
