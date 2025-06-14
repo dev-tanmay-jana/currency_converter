@@ -1,4 +1,4 @@
-const base_url= "https://raw.githubusercontent.com/fawazahmed0/exchange-api/main/aed/aed.json";
+const base_url= "https://github.com/fawazahmed0/exchange-api";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
