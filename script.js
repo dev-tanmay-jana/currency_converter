@@ -48,6 +48,7 @@ const updaterate = async () =>{
     msg.innerText = `${amtval} ${fromcurr.value} = ${finalAmount} ${tocurr.value}`;
 };
 
+
 const updateFlag = (element) =>{
     let currcode =element.value;
     console.log(currcode);
