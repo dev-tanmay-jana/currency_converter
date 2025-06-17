@@ -35,12 +35,13 @@ const updaterate = async () =>{
         amount.value="1";
     }
     console.log(fromcurr.value,tocurr.value);
+
     const url=`${base_url}/${fromcurr.value.toLowerCase()}/${tocurr.value.toLowerCase()}.json`;
     console.log(url)
     let responce= await fetch(url);
     console.log(responce);
     let data= await responce.json();
-    console.log(data)
+    console.log(responce)
     let rate = data[tocurr.value.toLowerCase()];
 
     let finalAmount = amtval * rate;
