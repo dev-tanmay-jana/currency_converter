@@ -1,4 +1,4 @@
-const base_url= "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
+const base_url= "https://latest.currency-api.pages.dev/v1/currencies";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -36,18 +36,17 @@ const updaterate = async () =>{
     }
     console.log(fromcurr.value,tocurr.value);
 
-    const url=`${base_url}/${fromcurr.value.toLowerCase()}/${tocurr.value.toLowerCase()}.json`;
+    const url = `${base_url}/${fromcurr.value.toLowerCase()}/${tocurr.value.toLowerCase()}.json`;
     console.log(url)
     let responce= await fetch(url);
     console.log(responce);
     let data= await responce.json();
-    console.log(responce)
+    console.log(data)
     let rate = data[tocurr.value.toLowerCase()];
 
     let finalAmount = amtval * rate;
     msg.innerText = `${amtval} ${fromcurr.value} = ${finalAmount} ${tocurr.value}`;
 };
-
 
 const updateFlag = (element) =>{
     let currcode =element.value;
