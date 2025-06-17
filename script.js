@@ -35,7 +35,6 @@ const updaterate = async () =>{
         amount.value="1";
     }
     console.log(fromcurr.value,tocurr.value);
-
     const url=`${base_url}/${fromcurr.value.toLowerCase()}/${tocurr.value.toLowerCase()}.json`;
     console.log(url)
     let responce= await fetch(url);
