@@ -58,7 +58,7 @@ form input {
     width: 3rem;
     height: 2rem;
 }
-.msg {
+.amt {
   margin: 2rem 0 2rem 0;
 }
 form button{
@@ -68,7 +68,7 @@ form button{
     color: #fff;
     cursor: pointer;
 }
-.amt{
+.msg{
     margin: 10px;
      height: 3rem;
     font-size: 1.5rem;
