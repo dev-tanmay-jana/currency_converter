@@ -69,6 +69,7 @@ form button{
     cursor: pointer;
 }
 .amt{
+    margin: 10px;
      height: 3rem;
     font-size: 1.5rem;
     background-color: #094b19;
